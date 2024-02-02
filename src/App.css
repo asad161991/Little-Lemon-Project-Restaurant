@@ -1,0 +1,556 @@
+/* Start CallToAction Banner */
+
+/* Styles for MobileNavigation component */
+.mobile-navigation {
+  display: block;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 63px);
+  left: 0;
+  right: 0;
+  top: 62px;
+}
+
+.mobile-menu {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+
+/* Header */
+#header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem 0;
+}
+
+#header .row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu li {
+  list-style: none;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: #333333;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+
+.main-menu li .active,
+.main-menu li a:hover {
+  background: #495e57;
+  color: #fff;
+}
+
+
+#humburger {
+  display: none;
+}
+
+@media(max-width:767px) {
+  .hide {
+    display: none;
+  }
+ #humburger {
+    width: 100%;
+    text-align: right;
+    display: block;
+}
+#header .row {
+  align-items: center;
+}
+#header nav {
+  background: #f4ce14;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 4.875rem;
+}
+#header .main-menu {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#header .main-menu li a {
+
+  border-radius: 0;
+  margin-left: 0;
+  padding: 1rem 1rem;
+  background: transparent !important;
+  display: block;
+}
+}
+
+.callToAction-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
+  align-items: center;
+}
+
+.callToAction-left h3 {
+  font-family: "Markazi Text";
+  font-weight: normal;
+}
+
+.callToAction-left h1 {
+  color: #f4ce14;
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#callToAction {
+  background-color: #495e57;
+  padding: 2.5% 0;
+}
+
+#callToAction .row {
+  align-items: center;
+}
+
+.callToAction-left .btn {
+  margin-top: 2rem;
+}
+.callToAction-left p {
+  width: 75%;
+}
+
+#callToAction .img-responsive {
+  border-radius: 10px;
+}
+
+#callToAction .btn:hover {
+  background-color: #fff;
+}
+
+.btn {
+  background-color: #f4ce14;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  padding: 1.3rem 3rem;
+  font-weight: 600;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  color: #495e57;
+  transition: all 0.5s ease-in;
+}
+
+.callToAction-left {
+  color: #fff;
+}
+/* Specials */
+
+#specials {
+  padding-top: 4%;
+  padding-bottom: 5%;
+}
+
+.specials-primary-row {
+  display: flex;
+  padding-bottom: 4%;
+}
+
+.specials-primary-row .col {
+  width: 50%;
+}
+
+.specials-primary-col-right {
+  text-align: right;
+}
+
+.specials-primary-row .btn {
+  background-color: #495e57;
+  color: #fff;
+}
+
+.specials-primary-row .btn:hover {
+  background-color: #f4ce14;
+  color: #495e57;
+}
+
+.special-card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.special-card {
+  background-color: #edefee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.special-card-img img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.special-card-img {
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.special-card-img:hover img {
+  transform: scale(1.2);
+}
+
+.special-card-content {
+  padding: 2rem 2rem;
+}
+
+.order-delivery-btn {
+  display: flex;
+  align-items: center;
+  color: #495e57;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.order-delivery-btn img {
+  margin-left: 0.8rem;
+  transition: all 0.5s ease;
+}
+
+.order-delivery-btn:hover {
+  color: #f4ce14;
+}
+.order-delivery-btn:hover img {
+  transform: translateX(-5px);
+}
+
+.special-card .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  color: #f4ce14;
+}
+
+.special-card h5 {
+  font-family: "Markazi Text";
+  font-size: 1.5rem;
+}
+
+/* About */
+#about {
+  padding-bottom: 12rem;
+  padding-top: 5rem;
+}
+#about .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  align-items: center;
+}
+.about-column {
+  position: relative;
+}
+
+.about-column p {
+  width: 75%;
+}
+
+.about-column h2 {
+  color: #f4ce14;
+}
+
+.about-column h3 {
+  font-family: "Markazi Text";
+}
+.about-column img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-img {
+  overflow: hidden;
+  width: 55%;
+  float: right;
+  height: 400px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-img:nth-child(2) {
+  float: none;
+  position: absolute;
+  top: 24%;
+  z-index: 1;
+  right: 35%;
+}
+
+/* Testimonials */
+#testimonials {
+  background: #f8f8f8;
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+}
+#testimonials .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#testimonials .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.testimonial-row {
+  display: grid;
+  grid-template-columns: 5.3125rem 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.testimonial-card {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  box-shadow: 1px 4px 45px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img img {
+  width: 5.3125rem;
+  height: 5.3125rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rating {
+  color: #f4ce14;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Footer */
+
+#footer .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8rem;
+  font-size: 16px;
+}
+
+#footer {
+  background-color: #495e57;
+  padding: 2.5% 0;
+  color: #fff;
+}
+
+.footer-col ul {
+  padding-left: 1.1rem;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s ease-in;
+  font-size: 0.9375rem;
+  display: block;
+}
+
+.footer-col a:hover {
+  color: #f4ce14;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 7rem;
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+}
+
+#page_banner {
+  padding: 5% 0;
+  color: #fff;
+  text-align: center;
+  background-color: #495e57;
+}
+.coming-soon {
+  text-align: center;
+  padding: 12rem 0;
+}
+
+/* Booking Form */
+.booking-form {
+  width: 100%;
+  background: #edefee;
+  max-width: 600px;
+  margin: 4rem auto;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+}
+
+input, select {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.btn.submit {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+  .special-card-row,
+  .callToAction-row,
+  #about .row,
+  #footer .row {
+    grid-gap: 1rem;
+  }
+  #testimonials .row {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .special-card-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-navigation {
+    display: none;
+  }
+  #header .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .special-card-row,
+  #testimonials .row,
+  #about .row,
+  #footer .row,
+  .callToAction-row {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  #about,
+  #testimonials,
+  #footer {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .btn {
+    font-size: 0.875rem;
+    padding: 1rem 2rem;
+  }
+  .specials-primary-row {
+    align-items: center;
+  }
+  .specials-primary-row h2 {
+    font-size: 1.5rem;
+  }
+  .about-column:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .about-img {
+    width: 100%;
+    float: right;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+  }
+  .about-img:nth-child(2) {
+    float: none;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    right: 0;
+  }
+  #testimonials .title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .booking-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 4rem auto;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+}
+#page_banner h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.coming-soon {
+  font-size: 2rem;
+}
+  .footer-logo {
+    margin: 0 auto;
+    display: block;
+  }
+}
